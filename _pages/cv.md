@@ -1,64 +1,47 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume
 ---
 
-{% include base_path %}
+## Muhammad Usman
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+Ph.D. candidate in Information and Communication Engineering, Shenzhen University, China. Expected completion: November 2026.
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+## Research interests
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+Self-supervised and contrastive learning; 3D skeleton-based action recognition; geometric algebra and geometric deep learning; graph neural networks and spatiotemporal Transformers; knowledge distillation; multimodal human-motion understanding.
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+## Education
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+- **2022–present:** Ph.D., Information and Communication Engineering, Shenzhen University, China.
+- **2018–2020:** M.Eng., Electrical and Computer Engineering, South China University of Technology, China.
+- **2012–2016:** B.Sc., Telecommunication and Networking, COMSATS University Islamabad (Abbottabad Campus), Pakistan.
+
+## Research experience
+
+- **2022–present:** Doctoral Researcher, Shenzhen University. Self-supervised human-motion representation learning, geometry-aware graph/Transformer models, and model efficiency.
+
+## Teaching and professional experience
+
+- **2017–2018:** Lecturer, Northern University, Nowshera, Pakistan.
+- **2016–2017:** Intern, Pakistan Telecommunication Company Limited (PTCL), Pakistan.
+
+## Technical skills
+
+Python, C++, MATLAB, Java, PyTorch, Linux, LaTeX, GPU-based machine learning research, graph neural networks, and geometric deep learning.
+
+## Publications
+
+See the [publications page](/publications/) or [Google Scholar](https://scholar.google.com/citations?user=tYJWV8UAAAAJ&hl=en).
+
+## Academic profiles and contact
+
+- Email: [usmanmuhammad2022@email.szu.edu.cn](mailto:usmanmuhammad2022@email.szu.edu.cn)
+- [ORCID](https://orcid.org/0009-0008-9332-9724)
+- [GitHub](https://github.com/usmanszu)
+
+A downloadable PDF CV will be added when the PDF upload is completed.
