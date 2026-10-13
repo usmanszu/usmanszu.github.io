@@ -1,0 +1,9 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Publications"
+    url: /publications/
+  - title: "CV"
+    url: /cv/
+  - title: "Google Scholar"
+    url: https://scholar.google.com/citations?user=tYJWV8UAAAAJ

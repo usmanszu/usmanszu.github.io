@@ -1,0 +1,30 @@
+name: Install Academic Pages on setup branch
+on:
+  push:
+    branches: [academic-pages-setup]
+    paths:
+      - 'scripts/install-academic-pages.sh'
+      - '.github/workflows/install-academic-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  install:
+    if: github.ref == 'refs/heads/academic-pages-setup'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: academic-pages-setup
+          persist-credentials: true
+      - name: Copy and personalize Academic Pages
+        run: bash scripts/install-academic-pages.sh
+      - name: Commit website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Install and customize Academic Pages template"
+            git push origin HEAD:academic-pages-setup
+          fi
