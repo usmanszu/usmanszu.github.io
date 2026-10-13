@@ -23,7 +23,7 @@ repository               : "usmanszu/usmanszu.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           :"profile.jpg"
+  avatar           :"profile.png"
   name             : "Muhammad Usman"
   pronouns         : # example: "she/her"  
   bio              : "Ph.D. researcher in self-supervised 3D skeleton action recognition and geometric deep learning."
