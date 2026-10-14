@@ -13,7 +13,9 @@ redirect_from:
 Shenzhen University, China  
 Email: [usmanmuhammad2022@email.szu.edu.cn](mailto:usmanmuhammad2022@email.szu.edu.cn) · [Google Scholar](https://scholar.google.com/citations?user=tYJWV8UAAAAJ&hl=en) · [GitHub](https://github.com/usmanszu) · [ORCID](https://orcid.org/0009-0008-9332-9724)
 
-> This online CV reflects the academic information in my current CV. A downloadable PDF will be linked here once uploaded to the repository.
+**[Download my academic CV (PDF)](/Muhammad_Usman_CV.pdf)**
+
+This page also provides an online version of my academic CV.
 
 ## Research Objective
 
