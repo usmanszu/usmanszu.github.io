@@ -1,0 +1,27 @@
+name: Validate unified academic pages
+on:
+  push:
+    branches: [unified-academic-pages]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build academic website
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      - name: Check published routes
+        run: |
+          test -f _site/index.html
+          test -f _site/publications/index.html
+          test -f _site/cv/index.html
+          grep -q "Peer-Reviewed Journal Articles" _site/publications/index.html
+          grep -q "Download CV" _site/cv/index.html
