@@ -1,0 +1,28 @@
+name: Validate thesis-aligned website
+on:
+  push:
+    branches: [thesis-aligned-website-revisions]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build Jekyll website
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+      - name: Validate website pages
+        run: |
+          test -f _site/index.html
+          test -f _site/publications/index.html
+          test -f _site/cv/index.html
+          grep -q "Hierarchical Contrastive Representation Learning" _site/index.html
+          grep -q "vol. 309" _site/publications/index.html
+          grep -q "Geometry-Aware Representation Learning" _site/cv/index.html
